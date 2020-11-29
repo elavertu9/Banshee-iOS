@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2125744E7F002A84E4 /* AppDelegate.swift */; };
+		E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */; };
+		E97C7E2625744E7F002A84E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2525744E7F002A84E4 /* ViewController.swift */; };
+		E97C7E2925744E7F002A84E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2725744E7F002A84E4 /* Main.storyboard */; };
+		E97C7E2B25744E81002A84E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2A25744E81002A84E4 /* Assets.xcassets */; };
+		E97C7E2E25744E81002A84E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */; };
+		E97C7E3925744E82002A84E4 /* Banshee_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E3825744E82002A84E4 /* Banshee_ClientTests.swift */; };
+		E97C7E4425744E82002A84E4 /* Banshee_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E97C7E3525744E82002A84E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E97C7E1625744E7F002A84E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E97C7E1D25744E7F002A84E4;
+			remoteInfo = "Banshee-Client";
+		};
+		E97C7E4025744E82002A84E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E97C7E1625744E7F002A84E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E97C7E1D25744E7F002A84E4;
+			remoteInfo = "Banshee-Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E97C7E1E25744E7F002A84E4 /* Banshee-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banshee-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97C7E2125744E7F002A84E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E97C7E2525744E7F002A84E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E97C7E2825744E7F002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E97C7E2A25744E81002A84E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E97C7E2D25744E81002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E97C7E2F25744E81002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97C7E3425744E82002A84E4 /* Banshee-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banshee-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97C7E3825744E82002A84E4 /* Banshee_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banshee_ClientTests.swift; sourceTree = "<group>"; };
+		E97C7E3A25744E82002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97C7E3F25744E82002A84E4 /* Banshee-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banshee-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banshee_ClientUITests.swift; sourceTree = "<group>"; };
+		E97C7E4525744E82002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E97C7E1B25744E7F002A84E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3125744E82002A84E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3C25744E82002A84E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E97C7E1525744E7F002A84E4 = {
+			isa = PBXGroup;
+			children = (
+				E97C7E2025744E7F002A84E4 /* Banshee-Client */,
+				E97C7E3725744E82002A84E4 /* Banshee-ClientTests */,
+				E97C7E4225744E82002A84E4 /* Banshee-ClientUITests */,
+				E97C7E1F25744E7F002A84E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E97C7E1F25744E7F002A84E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E1E25744E7F002A84E4 /* Banshee-Client.app */,
+				E97C7E3425744E82002A84E4 /* Banshee-ClientTests.xctest */,
+				E97C7E3F25744E82002A84E4 /* Banshee-ClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E97C7E2025744E7F002A84E4 /* Banshee-Client */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E2125744E7F002A84E4 /* AppDelegate.swift */,
+				E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */,
+				E97C7E2525744E7F002A84E4 /* ViewController.swift */,
+				E97C7E2725744E7F002A84E4 /* Main.storyboard */,
+				E97C7E2A25744E81002A84E4 /* Assets.xcassets */,
+				E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */,
+				E97C7E2F25744E81002A84E4 /* Info.plist */,
+			);
+			path = "Banshee-Client";
+			sourceTree = "<group>";
+		};
+		E97C7E3725744E82002A84E4 /* Banshee-ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E3825744E82002A84E4 /* Banshee_ClientTests.swift */,
+				E97C7E3A25744E82002A84E4 /* Info.plist */,
+			);
+			path = "Banshee-ClientTests";
+			sourceTree = "<group>";
+		};
+		E97C7E4225744E82002A84E4 /* Banshee-ClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */,
+				E97C7E4525744E82002A84E4 /* Info.plist */,
+			);
+			path = "Banshee-ClientUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E97C7E1D25744E7F002A84E4 /* Banshee-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97C7E4825744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-Client" */;
+			buildPhases = (
+				E97C7E1A25744E7F002A84E4 /* Sources */,
+				E97C7E1B25744E7F002A84E4 /* Frameworks */,
+				E97C7E1C25744E7F002A84E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Banshee-Client";
+			productName = "Banshee-Client";
+			productReference = E97C7E1E25744E7F002A84E4 /* Banshee-Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E97C7E3325744E82002A84E4 /* Banshee-ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97C7E4B25744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-ClientTests" */;
+			buildPhases = (
+				E97C7E3025744E82002A84E4 /* Sources */,
+				E97C7E3125744E82002A84E4 /* Frameworks */,
+				E97C7E3225744E82002A84E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E97C7E3625744E82002A84E4 /* PBXTargetDependency */,
+			);
+			name = "Banshee-ClientTests";
+			productName = "Banshee-ClientTests";
+			productReference = E97C7E3425744E82002A84E4 /* Banshee-ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E97C7E3E25744E82002A84E4 /* Banshee-ClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97C7E4E25744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-ClientUITests" */;
+			buildPhases = (
+				E97C7E3B25744E82002A84E4 /* Sources */,
+				E97C7E3C25744E82002A84E4 /* Frameworks */,
+				E97C7E3D25744E82002A84E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E97C7E4125744E82002A84E4 /* PBXTargetDependency */,
+			);
+			name = "Banshee-ClientUITests";
+			productName = "Banshee-ClientUITests";
+			productReference = E97C7E3F25744E82002A84E4 /* Banshee-ClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E97C7E1625744E7F002A84E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E97C7E1D25744E7F002A84E4 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E97C7E3325744E82002A84E4 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E97C7E1D25744E7F002A84E4;
+					};
+					E97C7E3E25744E82002A84E4 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E97C7E1D25744E7F002A84E4;
+					};
+				};
+			};
+			buildConfigurationList = E97C7E1925744E7F002A84E4 /* Build configuration list for PBXProject "Banshee-Client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E97C7E1525744E7F002A84E4;
+			productRefGroup = E97C7E1F25744E7F002A84E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E97C7E1D25744E7F002A84E4 /* Banshee-Client */,
+				E97C7E3325744E82002A84E4 /* Banshee-ClientTests */,
+				E97C7E3E25744E82002A84E4 /* Banshee-ClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E97C7E1C25744E7F002A84E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C7E2E25744E81002A84E4 /* LaunchScreen.storyboard in Resources */,
+				E97C7E2B25744E81002A84E4 /* Assets.xcassets in Resources */,
+				E97C7E2925744E7F002A84E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3225744E82002A84E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3D25744E82002A84E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E97C7E1A25744E7F002A84E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C7E2625744E7F002A84E4 /* ViewController.swift in Sources */,
+				E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */,
+				E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3025744E82002A84E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C7E3925744E82002A84E4 /* Banshee_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E97C7E3B25744E82002A84E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97C7E4425744E82002A84E4 /* Banshee_ClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E97C7E3625744E82002A84E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E97C7E1D25744E7F002A84E4 /* Banshee-Client */;
+			targetProxy = E97C7E3525744E82002A84E4 /* PBXContainerItemProxy */;
+		};
+		E97C7E4125744E82002A84E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E97C7E1D25744E7F002A84E4 /* Banshee-Client */;
+			targetProxy = E97C7E4025744E82002A84E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E97C7E2725744E7F002A84E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E97C7E2825744E7F002A84E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E97C7E2D25744E81002A84E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E97C7E4625744E82002A84E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E97C7E4725744E82002A84E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E97C7E4925744E82002A84E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E97C7E4A25744E82002A84E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E97C7E4C25744E82002A84E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-ClientTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Banshee-Client.app/Banshee-Client";
+			};
+			name = Debug;
+		};
+		E97C7E4D25744E82002A84E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-ClientTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-ClientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Banshee-Client.app/Banshee-Client";
+			};
+			name = Release;
+		};
+		E97C7E4F25744E82002A84E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-ClientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Banshee-Client";
+			};
+			name = Debug;
+		};
+		E97C7E5025744E82002A84E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Banshee-ClientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.lavertu.banshee.Banshee-ClientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Banshee-Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E97C7E1925744E7F002A84E4 /* Build configuration list for PBXProject "Banshee-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C7E4625744E82002A84E4 /* Debug */,
+				E97C7E4725744E82002A84E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97C7E4825744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C7E4925744E82002A84E4 /* Debug */,
+				E97C7E4A25744E82002A84E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97C7E4B25744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C7E4C25744E82002A84E4 /* Debug */,
+				E97C7E4D25744E82002A84E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97C7E4E25744E82002A84E4 /* Build configuration list for PBXNativeTarget "Banshee-ClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97C7E4F25744E82002A84E4 /* Debug */,
+				E97C7E5025744E82002A84E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E97C7E1625744E7F002A84E4 /* Project object */;
+}
