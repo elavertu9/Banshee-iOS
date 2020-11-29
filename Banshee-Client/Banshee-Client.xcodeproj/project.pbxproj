@@ -15,6 +15,7 @@
 		E97C7E2E25744E81002A84E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */; };
 		E97C7E3925744E82002A84E4 /* Banshee_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E3825744E82002A84E4 /* Banshee_ClientTests.swift */; };
 		E97C7E4425744E82002A84E4 /* Banshee_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */; };
+		E97C7E55257450D8002A84E4 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E54257450D8002A84E4 /* Piece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E97C7E3F25744E82002A84E4 /* Banshee-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banshee-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banshee_ClientUITests.swift; sourceTree = "<group>"; };
 		E97C7E4525744E82002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97C7E54257450D8002A84E4 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				E97C7E2125744E7F002A84E4 /* AppDelegate.swift */,
 				E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */,
-				E97C7E2525744E7F002A84E4 /* ViewController.swift */,
-				E97C7E2725744E7F002A84E4 /* Main.storyboard */,
+				E97C7E59257450ED002A84E4 /* Model */,
+				E97C7E5D257450FC002A84E4 /* View */,
+				E97C7E5E25745105002A84E4 /* Controller */,
 				E97C7E2A25744E81002A84E4 /* Assets.xcassets */,
 				E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */,
 				E97C7E2F25744E81002A84E4 /* Info.plist */,
@@ -126,6 +129,30 @@
 				E97C7E4525744E82002A84E4 /* Info.plist */,
 			);
 			path = "Banshee-ClientUITests";
+			sourceTree = "<group>";
+		};
+		E97C7E59257450ED002A84E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E54257450D8002A84E4 /* Piece.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E97C7E5D257450FC002A84E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E2725744E7F002A84E4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E97C7E5E25745105002A84E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E2525744E7F002A84E4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97C7E55257450D8002A84E4 /* Piece.swift in Sources */,
 				E97C7E2625744E7F002A84E4 /* ViewController.swift in Sources */,
 				E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */,
 				E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */,
