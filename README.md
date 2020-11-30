@@ -10,6 +10,7 @@
 * [Developer Pattern](#developer-pattern)
 * [GitHub Work Flow](#github-work-flow)
 * [Usage](#usage)
+    * [Helpful Commands](#helpful-commands)
 * [License](#license)
 * [Contact](#contact)
 
@@ -71,6 +72,11 @@ After installation, using Xcode...
 1. Select the device you would like to run the application on next to the play button
 2. Press the play button
     * The first time you do this, it will take some time to initialize
+### Helpful Commands
+Refresh Xcode cache
+```text
+rm -rf ~/Library/Developer/Xcode/DerivedData
+```
 
 
 ## License
