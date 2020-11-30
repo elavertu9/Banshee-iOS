@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2125744E7F002A84E4 /* AppDelegate.swift */; };
 		E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */; };
-		E97C7E2625744E7F002A84E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2525744E7F002A84E4 /* ViewController.swift */; };
+		E97C7E2625744E7F002A84E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2525744E7F002A84E4 /* MainViewController.swift */; };
 		E97C7E2925744E7F002A84E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2725744E7F002A84E4 /* Main.storyboard */; };
 		E97C7E2B25744E81002A84E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2A25744E81002A84E4 /* Assets.xcassets */; };
 		E97C7E2E25744E81002A84E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */; };
 		E97C7E3925744E82002A84E4 /* Banshee_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E3825744E82002A84E4 /* Banshee_ClientTests.swift */; };
 		E97C7E4425744E82002A84E4 /* Banshee_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */; };
-		E97C7E55257450D8002A84E4 /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E54257450D8002A84E4 /* Piece.swift */; };
+		E97C7E6325745782002A84E4 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E6225745782002A84E4 /* UserManager.swift */; };
+		E97C7E6825745798002A84E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E6725745798002A84E4 /* UserData.swift */; };
+		E9CD7EC62574801F007BB81C /* UserStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */; };
+		E9CD7ED125748275007BB81C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7ED025748275007BB81C /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 		E97C7E1E25744E7F002A84E4 /* Banshee-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banshee-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C7E2125744E7F002A84E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E97C7E2525744E7F002A84E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E97C7E2525744E7F002A84E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E97C7E2825744E7F002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E97C7E2A25744E81002A84E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E97C7E2D25744E81002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +53,10 @@
 		E97C7E3F25744E82002A84E4 /* Banshee-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banshee-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banshee_ClientUITests.swift; sourceTree = "<group>"; };
 		E97C7E4525744E82002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E97C7E54257450D8002A84E4 /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		E97C7E6225745782002A84E4 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		E97C7E6725745798002A84E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsViewController.swift; sourceTree = "<group>"; };
+		E9CD7ED025748275007BB81C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +140,9 @@
 		E97C7E59257450ED002A84E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E97C7E54257450D8002A84E4 /* Piece.swift */,
+				E97C7E6225745782002A84E4 /* UserManager.swift */,
+				E97C7E6725745798002A84E4 /* UserData.swift */,
+				E9CD7ED025748275007BB81C /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,7 +158,8 @@
 		E97C7E5E25745105002A84E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E97C7E2525744E7F002A84E4 /* ViewController.swift */,
+				E97C7E2525744E7F002A84E4 /* MainViewController.swift */,
+				E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97C7E55257450D8002A84E4 /* Piece.swift in Sources */,
-				E97C7E2625744E7F002A84E4 /* ViewController.swift in Sources */,
+				E9CD7EC62574801F007BB81C /* UserStatsViewController.swift in Sources */,
+				E9CD7ED125748275007BB81C /* UserModel.swift in Sources */,
+				E97C7E2625744E7F002A84E4 /* MainViewController.swift in Sources */,
+				E97C7E6825745798002A84E4 /* UserData.swift in Sources */,
 				E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */,
+				E97C7E6325745782002A84E4 /* UserManager.swift in Sources */,
 				E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
