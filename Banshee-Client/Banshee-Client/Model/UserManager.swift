@@ -9,7 +9,8 @@
 import Foundation
 
 protocol UserManagerDelegate {
-    func didUpdateUser(user: UserModel)
+    func didUpdateUser(_ userManager: UserManager, user: UserModel)
+    func didFailWithError(error: Error)
 }
 
 struct UserManager {
@@ -17,13 +18,17 @@ struct UserManager {
     let userURL = "http://localhost:8080/api/user/userId"
     var delegate: UserManagerDelegate?
     
+//    init(delegate: UserManagerDelegate) {
+//        self.delegate = delegate
+//    }
+    
     func fetchUser() {
         let urlString = "\(userURL)/5ee4130b-d5ae-4981-8d3e-b74caba45c9e"
         print(urlString)
-        performRequest(urlString: urlString)
+        performRequest(with: urlString)
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(with urlString: String) {
         // 1. Create a URL
         if let url = URL(string: urlString) {
             
@@ -33,13 +38,13 @@ struct UserManager {
             // 3. Give the session a task with trailing closure
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFailWithError(error: error!)
                     return
                 }
                 
                 if let safeData = data {
-                    if let user = self.parseJSON(userData: safeData) {
-                        self.delegate?.didUpdateUser(user: user)
+                    if let user = self.parseJSON(safeData) {
+                        self.delegate?.didUpdateUser(self, user: user)
                     }
                 }
             }
@@ -49,7 +54,7 @@ struct UserManager {
         }
     }
     
-    func parseJSON(userData: Data) -> UserModel? {
+    func parseJSON(_ userData: Data) -> UserModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(UserData.self, from: userData)
@@ -69,7 +74,7 @@ struct UserManager {
             
             return user;
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

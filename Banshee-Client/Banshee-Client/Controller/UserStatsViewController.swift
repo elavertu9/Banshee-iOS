@@ -8,27 +8,28 @@
 
 import UIKit
 
-class UserStatsViewController: UIViewController, UserManagerDelegate {
+//class UserStatsViewController: UIViewController, UserManagerDelegate {
+class UserStatsViewController: UIViewController {
     
     @IBOutlet weak var userIdLabel: UILabel!
     @IBOutlet weak var updateButton: UIButton!
     
-    var userManager = UserManager()
+    //var userManager = UserManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userManager.delegate = self
+        //userManager.delegate = self
     }
     
-    func didUpdateUser(user: UserModel) {
-        print(user.userId)
-        userIdLabel.text = "User ID: " + user.userId
-    }
+//    func didUpdateUser(user: UserModel) {
+//        print(user.userId)
+//        userIdLabel.text = "User ID: " + user.userId
+//    }
 
-    @IBAction func updateButtonPressed(_ sender: UIButton) {
-        userManager.fetchUser()
-    }
+//    @IBAction func updateButtonPressed(_ sender: UIButton) {
+//        userManager.fetchUser()
+//    }
     /*
     // MARK: - Navigation
 
