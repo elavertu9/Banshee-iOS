@@ -15,15 +15,11 @@ protocol UserManagerDelegate {
 
 struct UserManager {
     
-    let userURL = "http://localhost:8080/api/user/userId"
+    let userAPI = "http://localhost:8080/api/user/"
     var delegate: UserManagerDelegate?
     
-//    init(delegate: UserManagerDelegate) {
-//        self.delegate = delegate
-//    }
-    
-    func fetchUser() {
-        let urlString = "\(userURL)/5ee4130b-d5ae-4981-8d3e-b74caba45c9e"
+    func fetchUser(_ userId: String) {
+        let urlString = "\(userAPI)/userId/\(userId)"
         print(urlString)
         performRequest(with: urlString)
     }
@@ -60,7 +56,7 @@ struct UserManager {
             let decodedData = try decoder.decode(UserData.self, from: userData)
             
             let userId = decodedData.userId
-            let username = decodedData.userId
+            let username = decodedData.username
             let firstName = decodedData.firstName
             let lastName = decodedData.lastName
             let emailAddress = decodedData.emailAddress
