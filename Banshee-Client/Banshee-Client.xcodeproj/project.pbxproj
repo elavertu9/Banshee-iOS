@@ -10,9 +10,11 @@
 		E90237B12575ECFB00272B5D /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237B02575ECFB00272B5D /* GameData.swift */; };
 		E90237B62575ED0B00272B5D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237B52575ED0B00272B5D /* GameModel.swift */; };
 		E90237BB2575ED1E00272B5D /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237BA2575ED1E00272B5D /* GameManager.swift */; };
+		E90237C02577222A00272B5D /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237BF2577222A00272B5D /* GamesViewController.swift */; };
+		E90237C52577225C00272B5D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237C42577225C00272B5D /* AccountViewController.swift */; };
+		E90237CA2577228800272B5D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90237C92577228800272B5D /* SettingsViewController.swift */; };
 		E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2125744E7F002A84E4 /* AppDelegate.swift */; };
 		E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */; };
-		E97C7E2625744E7F002A84E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E2525744E7F002A84E4 /* MainViewController.swift */; };
 		E97C7E2925744E7F002A84E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2725744E7F002A84E4 /* Main.storyboard */; };
 		E97C7E2B25744E81002A84E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2A25744E81002A84E4 /* Assets.xcassets */; };
 		E97C7E2E25744E81002A84E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97C7E2C25744E81002A84E4 /* LaunchScreen.storyboard */; };
@@ -20,7 +22,6 @@
 		E97C7E4425744E82002A84E4 /* Banshee_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E4325744E82002A84E4 /* Banshee_ClientUITests.swift */; };
 		E97C7E6325745782002A84E4 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E6225745782002A84E4 /* UserManager.swift */; };
 		E97C7E6825745798002A84E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C7E6725745798002A84E4 /* UserData.swift */; };
-		E9CD7EC62574801F007BB81C /* UserStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */; };
 		E9CD7ED125748275007BB81C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD7ED025748275007BB81C /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +46,12 @@
 		E90237B02575ECFB00272B5D /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		E90237B52575ED0B00272B5D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E90237BA2575ED1E00272B5D /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E90237BF2577222A00272B5D /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		E90237C42577225C00272B5D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		E90237C92577228800272B5D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E97C7E1E25744E7F002A84E4 /* Banshee-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banshee-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97C7E2125744E7F002A84E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97C7E2325744E7F002A84E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E97C7E2525744E7F002A84E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E97C7E2825744E7F002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E97C7E2A25744E81002A84E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E97C7E2D25744E81002A84E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		E97C7E4525744E82002A84E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E97C7E6225745782002A84E4 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E97C7E6725745798002A84E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsViewController.swift; sourceTree = "<group>"; };
 		E9CD7ED025748275007BB81C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,15 @@
 				E90237B52575ED0B00272B5D /* GameModel.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		E90237CE257732EB00272B5D /* api */ = {
+			isa = PBXGroup;
+			children = (
+				E97C7E6225745782002A84E4 /* UserManager.swift */,
+				E90237BA2575ED1E00272B5D /* GameManager.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		E97C7E1525744E7F002A84E4 = {
@@ -181,10 +192,10 @@
 		E97C7E5E25745105002A84E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E97C7E6225745782002A84E4 /* UserManager.swift */,
-				E97C7E2525744E7F002A84E4 /* MainViewController.swift */,
-				E9CD7EC52574801F007BB81C /* UserStatsViewController.swift */,
-				E90237BA2575ED1E00272B5D /* GameManager.swift */,
+				E90237CE257732EB00272B5D /* api */,
+				E90237BF2577222A00272B5D /* GamesViewController.swift */,
+				E90237C42577225C00272B5D /* AccountViewController.swift */,
+				E90237C92577228800272B5D /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,14 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CD7EC62574801F007BB81C /* UserStatsViewController.swift in Sources */,
 				E9CD7ED125748275007BB81C /* UserModel.swift in Sources */,
+				E90237C52577225C00272B5D /* AccountViewController.swift in Sources */,
 				E90237B62575ED0B00272B5D /* GameModel.swift in Sources */,
-				E97C7E2625744E7F002A84E4 /* MainViewController.swift in Sources */,
 				E97C7E6825745798002A84E4 /* UserData.swift in Sources */,
 				E97C7E2225744E7F002A84E4 /* AppDelegate.swift in Sources */,
 				E90237B12575ECFB00272B5D /* GameData.swift in Sources */,
+				E90237C02577222A00272B5D /* GamesViewController.swift in Sources */,
 				E97C7E6325745782002A84E4 /* UserManager.swift in Sources */,
+				E90237CA2577228800272B5D /* SettingsViewController.swift in Sources */,
 				E97C7E2425744E7F002A84E4 /* SceneDelegate.swift in Sources */,
 				E90237BB2575ED1E00272B5D /* GameManager.swift in Sources */,
 			);
