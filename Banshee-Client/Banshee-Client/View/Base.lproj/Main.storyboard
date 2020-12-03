@@ -87,22 +87,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQm-it-yGB">
-                                <rect key="frame" x="192" y="631" width="30" height="30"/>
+                                <rect key="frame" x="97" y="571" width="221" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Call"/>
+                                <state key="normal" title="getGameByGameId"/>
                                 <connections>
-                                    <action selector="gameButtonPressed:" destination="9aa-iw-edc" eventType="touchUpInside" id="eAz-3a-q4I"/>
+                                    <action selector="getGameButtonPressed:" destination="9aa-iw-edc" eventType="touchUpInside" id="ixU-OB-9ZK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v08-HZ-Iwl">
+                                <rect key="frame" x="97" y="656" width="221" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="getGamesByUserId"/>
+                                <connections>
+                                    <action selector="getGamesButtonPressed:" destination="9aa-iw-edc" eventType="touchUpInside" id="ZSi-Vd-WKa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Progress: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9z-i9-hzl">
+                                <rect key="frame" x="68" y="155" width="278" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zx2-g6-AWy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Games" id="j9E-yt-rJ0"/>
+                    <connections>
+                        <outlet property="inProgressLabel" destination="C9z-i9-hzl" id="VDA-lC-XOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXy-Wn-m1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="608"/>
+            <point key="canvasLocation" x="-362.31884057971018" y="607.36607142857144"/>
         </scene>
         <!--Account-->
         <scene sceneID="02t-dP-PzQ">

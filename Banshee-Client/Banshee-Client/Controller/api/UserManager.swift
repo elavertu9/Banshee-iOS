@@ -15,7 +15,7 @@ protocol UserManagerDelegate {
 
 struct UserManager {
     
-    let userAPI = "http://localhost:8080/api/user/"
+    let userAPI = "http://localhost:8080/api/user"
     var delegate: UserManagerDelegate?
     
     func fetchUser(_ userId: String) {

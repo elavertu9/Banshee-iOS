@@ -23,6 +23,8 @@ import UIKit
 
 class GamesViewController: UIViewController, GameManagerDelegate {
     
+    @IBOutlet weak var inProgressLabel: UILabel!
+    
     var gameManager = GameManager()
 
     override func viewDidLoad() {
@@ -42,17 +44,28 @@ class GamesViewController: UIViewController, GameManagerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func gameButtonPressed(_ sender: UIButton) {
+
+    @IBAction func getGameButtonPressed(_ sender: UIButton) {
         gameManager.fetchGame("79c767f4-a440-477e-8b77-57a4d6199dce")
+    }
+    
+    @IBAction func getGamesButtonPressed(_ sender: UIButton) {
+        gameManager.fetchGames("1742fd58-262d-4ae9-9563-a3f901e741a2")
     }
     
     func didUpdateGame(_ gameManager: GameManager, game: GameModel) {
         // Update page with new Game object
         print(game)
-        
     }
     
-    func didFailWithError(error: Error) {
+    func didUpdateGames(_ gameManager: GameManager, games: [GameModel]) {
+        print(games)
+        DispatchQueue.main.async {
+            self.inProgressLabel.text = "In Progress: " + String(games.count)
+        }
+    }
+    
+    func didFailWithError(_ error: Error) {
         print(error)
     }
 }
