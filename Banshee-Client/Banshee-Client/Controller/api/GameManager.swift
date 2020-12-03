@@ -9,17 +9,22 @@ import Foundation
 
 protocol GameManagerDelegate {
     func didUpdateGame(_ gameManager: GameManager, game: GameModel)
-    func didFailWithError(error: Error)
+    func didUpdateGames(_ gameManager: GameManager, games: [GameModel])
+    func didFailWithError(_ error: Error)
 }
 
 struct GameManager {
     
-    let gameAPI = "http://localhost:8080/api/game/"
+    let gameAPI = "http://localhost:8080/api/game"
     var delegate: GameManagerDelegate?
     
     func fetchGame(_ gameId: String) {
         let urlString = "\(gameAPI)/gameId/\(gameId)"
-        print(urlString)
+        performRequest(with: urlString)
+    }
+    
+    func fetchGames(_ userId: String) {
+        let urlString = "\(gameAPI)/userId/\(userId)"
         performRequest(with: urlString)
     }
     
@@ -28,20 +33,57 @@ struct GameManager {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    
+                    self.delegate?.didFailWithError(error!)
+                    return
                 }
                 
                 if let safeData = data {
-                    if let game = self.parseJSON(safeData) {
-                        self.delegate?.didUpdateGame(self, game: game)
+                    
+                    if urlString.contains("/userId") {
+                        // handle array
+                        print("All user games requested")
+                        print(urlString)
+                        
+                        if let games = self.parseJSONArray(safeData) {
+                            self.delegate?.didUpdateGames(self, games: games)
+                        }
+                    } else {
+                        // handle single game object
+                        print("Single game requested")
+                        print(urlString)
+                        
+                        if let game = self.parseJSONObject(safeData) {
+                            self.delegate?.didUpdateGame(self, game: game)
+                        }
                     }
+                    
+                    
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(_ gameData: Data) -> GameModel? {
+    func parseJSONArray(_ gamesData: Data) -> [GameModel]? {
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode([GameData].self, from: gamesData)
+            
+            var games = [GameModel]()
+            
+            for game in decodedData {
+                let currentGame = GameModel(gameId: game.gameId, finished: game.finished, user1Color: game.user1Color, user2Color: game.user2Color, isForfeit: game.isForfeit, user1: game.user1, user2: game.user2, createDate: game.createDate, updateDate: game.updateDate)
+                games.append(currentGame)
+            }
+            
+            return games
+        } catch {
+            delegate?.didFailWithError(error)
+            return nil
+        }
+    }
+    
+    func parseJSONObject(_ gameData: Data) -> GameModel? {
         let decoder = JSONDecoder()
         do {
             let decodedData = try decoder.decode(GameData.self, from: gameData)
@@ -60,7 +102,7 @@ struct GameManager {
             
             return game;
         } catch {
-            delegate?.didFailWithError(error: error)
+            delegate?.didFailWithError(error)
             return nil
         }
     }
